@@ -1,4 +1,4 @@
-package lk.ijse;
+package lk.ijse.chatApplication;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -27,7 +27,7 @@ public class Applnitializer extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/login_page.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/register_page.fxml"))));
         primaryStage.show();
 
     }
