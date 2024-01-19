@@ -1,4 +1,10 @@
-package lk.ijse.chatApplication.bo;
+package lk.ijse.chatApplication.bo.custom;
 
-public interface RegisterBO {
+import lk.ijse.chatApplication.bo.SuperBO;
+import lk.ijse.chatApplication.dto.RegisterDTO;
+
+import java.sql.SQLException;
+
+public interface RegisterBO extends SuperBO {
+    boolean save(RegisterDTO dto) throws SQLException, ClassNotFoundException;
 }
