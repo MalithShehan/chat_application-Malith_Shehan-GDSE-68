@@ -4,6 +4,7 @@ import lk.ijse.chatApplication.dao.SQLUtil;
 import lk.ijse.chatApplication.dao.custom.RegisterDAO;
 import lk.ijse.chatApplication.entity.Register;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class RegisterDAOImpl implements RegisterDAO {
@@ -13,5 +14,13 @@ public class RegisterDAOImpl implements RegisterDAO {
         dto.getName(),
         dto.getEmail(),
         dto.getPassword());
+    }
+
+    @Override
+    public boolean searchUser(String email, String password) throws SQLException, ClassNotFoundException {
+        ResultSet resultSet = SQLUtil.execute("SELECT * FROM user WHERE email=? AND password=?", email, password);
+
+        return resultSet.next();
+
     }
 }

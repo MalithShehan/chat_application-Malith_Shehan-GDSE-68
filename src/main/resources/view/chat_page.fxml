@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ChatPage" prefHeight="768.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApplication.controller.ChatPageController">
+    <children>
+        <ImageView fitHeight="768.0" fitWidth="1336.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/loginPage01.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="675.0" fitWidth="1253.0" layoutX="41.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ChatPage01.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="78.0" layoutY="63.0" prefHeight="589.0" prefWidth="1180.0" />
+      <ImageView fitHeight="44.0" fitWidth="1068.0" layoutX="78.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ChatPage02.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1164.0" layoutY="667.0" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: rgba(0, 107, 205, 1); -fx-background-radius: 10;" text="Send">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="81.0" layoutY="667.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 25;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/ChatPage04.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="1043.0" layoutY="667.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/ChatPage05.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="1093.0" layoutY="667.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/ChatPage06.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+    </children>
+</AnchorPane>

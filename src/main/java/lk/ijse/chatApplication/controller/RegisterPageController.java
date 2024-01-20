@@ -3,7 +3,6 @@ package lk.ijse.chatApplication.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -11,7 +10,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.chatApplication.bo.BOFactory;
 import lk.ijse.chatApplication.bo.custom.RegisterBO;
-import lk.ijse.chatApplication.dao.DAOFactory;
 import lk.ijse.chatApplication.dto.RegisterDTO;
 
 import java.io.IOException;
@@ -85,16 +83,19 @@ public class RegisterPageController {
         boolean isNameValidated = Pattern.matches("[A-Za-z]{3,}", name);
         if (!isNameValidated) {
             new Alert(Alert.AlertType.ERROR, "Invalid User Name!").show();
+            return false;
         }
 
         boolean isEmailValidated = Pattern.matches("^[a-zA-Z0-9._%+-]+@gmail\\.com$", email);
         if (!isEmailValidated) {
             new Alert(Alert.AlertType.ERROR, "Invalid Email Address!").show();
+            return false;
         }
 
         boolean isPasswordValidated = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d\\S]{8,}$", password);
         if (!isPasswordValidated) {
             new Alert(Alert.AlertType.ERROR, "Invalid Password").show();
+            return false;
         }
         return true;
     }

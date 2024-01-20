@@ -1,6 +1,5 @@
 package lk.ijse.chatApplication.dao;
 
-import lk.ijse.chatApplication.bo.custom.impl.RegisterBOImpl;
 import lk.ijse.chatApplication.dao.custom.impl.RegisterDAOImpl;
 
 public class DAOFactory {

@@ -19,4 +19,9 @@ public class RegisterBOImpl implements RegisterBO {
                 dto.getPassword()
         ));
     }
+
+    @Override
+    public boolean searchUser(String email, String password) throws SQLException, ClassNotFoundException {
+        return registerDAO.searchUser(email, password);
+    }
 }
