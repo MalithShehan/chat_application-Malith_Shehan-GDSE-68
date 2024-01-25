@@ -97,6 +97,8 @@
       <workItem from="1705826510920" duration="482000" />
       <workItem from="1706068422049" duration="4013000" />
       <workItem from="1706110480352" duration="266000" />
+      <workItem from="1706110774407" duration="376000" />
+      <workItem from="1706155734294" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="Login page and Register page">
       <option name="closed" value="true" />
@@ -162,7 +164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705765272031</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Done">
+      <option name="closed" value="true" />
+      <created>1706110809995</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706110809995</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Done">
+      <option name="closed" value="true" />
+      <created>1706110833061</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706110833061</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +191,7 @@
     <MESSAGE value="DAO, BO and Validations" />
     <MESSAGE value="UI" />
     <MESSAGE value="Any" />
-    <option name="LAST_COMMIT_MESSAGE" value="Any" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
 </project>
